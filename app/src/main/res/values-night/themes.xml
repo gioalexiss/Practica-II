@@ -1,0 +1,7 @@
+<resources>
+    <style name="Base.Theme.PR_GARG_II" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primario</item>
+        <item name="colorOnPrimary">@color/sobre_primario</item>
+        <item name="colorPrimaryContainer">@color/contenedor_primario</item>
+    </style>
+</resources>

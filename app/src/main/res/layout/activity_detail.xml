@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="?attr/colorOnPrimary"
+        app:navigationIconTint="?attr/colorOnPrimary"
+        android:theme="@style/ThemeOverlay.App.Toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnReintentar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/reintentar"
+                android:visibility="gone"
+                app:icon="@drawable/ic_refresh" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardDetalle"
+                style="@style/Widget.Material3.CardView.Elevated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/ic_book"
+                        app:tint="?attr/colorPrimary"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        android:id="@+id/tvTitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="12dp"
+                        android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                        android:textStyle="bold" />
+
+                    <LinearLayout style="@style/Fila">
+                        <TextView style="@style/Etiqueta" android:text="@string/campo_id" />
+                        <TextView android:id="@+id/tvId" style="@style/Valor" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/Fila">
+                        <TextView style="@style/Etiqueta" android:text="@string/campo_autor" />
+                        <TextView android:id="@+id/tvAutor" style="@style/Valor" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/Fila">
+                        <TextView style="@style/Etiqueta" android:text="@string/campo_editorial" />
+                        <TextView android:id="@+id/tvEditorial" style="@style/Valor" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/Fila">
+                        <TextView style="@style/Etiqueta" android:text="@string/campo_paginas" />
+                        <TextView android:id="@+id/tvPaginas" style="@style/Valor" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/Fila">
+                        <TextView style="@style/Etiqueta" android:text="@string/campo_disponibilidad" />
+                        <TextView android:id="@+id/tvDisponible" style="@style/Valor" android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvOrigen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:textAppearance="?attr/textAppearanceBodySmall"
+                        android:textColor="?attr/colorOnSurfaceVariant" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFavorito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

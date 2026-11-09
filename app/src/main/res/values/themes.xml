@@ -1,0 +1,37 @@
+<resources>
+    <style name="Base.Theme.PR_GARG_II" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primario</item>
+        <item name="colorOnPrimary">@color/sobre_primario</item>
+        <item name="colorPrimaryContainer">@color/contenedor_primario</item>
+    </style>
+
+    <style name="Theme.PR_GARG_II" parent="Base.Theme.PR_GARG_II" />
+
+    <!-- Estilo de toolbar -->
+    <style name="ThemeOverlay.App.Toolbar" parent="ThemeOverlay.Material3.Toolbar.Surface">
+        <item name="colorControlNormal">?attr/colorOnPrimary</item>
+        <item name="colorOnSurface">?attr/colorOnPrimary</item>
+        <item name="colorOnSurfaceVariant">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Etiqueta">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?attr/textAppearanceLabelLarge</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <style name="Valor">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">?attr/textAppearanceBodyLarge</item>
+    </style>
+
+    <style name="Fila">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingVertical">6dp</item>
+    </style>
+</resources>

@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Explorador de Libros</string>
+
+    <!-- Bienvenida -->
+    <string name="saludo_nombre">¡Hola, %1$s!</string>
+    <string name="saludo_anonimo">¡Bienvenido!</string>
+    <string name="subtitulo_bienvenida">Consulta el catálogo, guarda tus favoritos y léelos sin conexión.</string>
+    <string name="seccion_perfil">Tu perfil</string>
+    <string name="hint_nombre">Nombre o alias</string>
+    <string name="guardar">Guardar</string>
+    <string name="error_nombre_vacio">Escribe un nombre o alias</string>
+    <string name="nombre_guardado">Nombre guardado: %1$s</string>
+    <string name="seccion_apariencia">Apariencia</string>
+    <string name="tema_oscuro_switch">Tema oscuro</string>
+    <string name="tema_oscuro">Oscuro</string>
+    <string name="tema_claro">Claro</string>
+    <string name="tema_oscuro_guardado">Tema oscuro guardado</string>
+    <string name="tema_claro_guardado">Tema claro guardado</string>
+    <string name="seccion_guardadas">Preferencias guardadas</string>
+    <string name="pref_nombre">Nombre</string>
+    <string name="pref_tema">Tema</string>
+    <string name="pref_seccion">Última sección</string>
+    <string name="pref_acceso">Último acceso</string>
+    <string name="sin_definir">Sin definir</string>
+    <string name="primer_acceso">Primer acceso</string>
+    <string name="ver_catalogo">Ver catálogo</string>
+    <string name="ver_favoritos_n">Mis favoritos (%1$d)</string>
+    <string name="continuar_en">Continuar en: %1$s</string>
+
+    <!-- Catálogo -->
+    <string name="titulo_catalogo">Catálogo de libros</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="reintentar">Reintentar</string>
+    <string name="catalogo_actualizado">Catálogo actualizado: %1$d libros</string>
+    <string name="catalogo_vacio">El servidor no tiene libros registrados.</string>
+    <string name="resumen_catalogo">%1$d libros en el servidor · Desliza hacia abajo para actualizar</string>
+    <string name="paginas_formato">%1$d páginas</string>
+    <string name="disponible">Disponible</string>
+    <string name="no_disponible">No disponible</string>
+    <string name="agregar_favorito">Agregar a favoritos</string>
+    <string name="quitar_favorito">Quitar de favoritos</string>
+    <string name="favorito_agregado">"%1$s" agregado a favoritos</string>
+    <string name="favorito_eliminado">"%1$s" eliminado de favoritos</string>
+
+    <!-- Detalle -->
+    <string name="titulo_detalle">Detalle del libro</string>
+    <string name="campo_id">ID</string>
+    <string name="campo_autor">Autor</string>
+    <string name="campo_editorial">Editorial</string>
+    <string name="campo_paginas">Páginas</string>
+    <string name="campo_disponibilidad">Disponibilidad</string>
+    <string name="origen_servidor">Fuente: servidor (API REST)</string>
+    <string name="origen_local">Fuente: base de datos local (Room) · sin conexión</string>
+    <string name="mostrando_offline">%1$s Mostrando datos guardados localmente.</string>
+
+    <!-- Favoritos -->
+    <string name="titulo_favoritos">Mis favoritos</string>
+    <string name="banner_offline">Guardados en el dispositivo (Room). Disponibles sin conexión a Internet.</string>
+    <string name="resumen_favoritos">%1$d libros guardados</string>
+    <string name="favoritos_vacio">Aún no tienes favoritos.\nMárcalos con la estrella desde el catálogo.</string>
+    <string name="ir_catalogo">Ir al catálogo</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="eliminar_favorito_titulo">Eliminar favorito</string>
+    <string name="eliminar_favorito_mensaje">¿Quitar "%1$s" de tus favoritos?</string>
+</resources>

@@ -1,0 +1,3 @@
+# Gson y Room
+-keep class com.example.pr_garg_ii.models.** { *; }
+-keep class com.example.pr_garg_ii.db.** { *; }

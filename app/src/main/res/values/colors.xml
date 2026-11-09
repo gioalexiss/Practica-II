@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primario">#1E4B9E</color>
+    <color name="sobre_primario">#FFFFFF</color>
+    <color name="contenedor_primario">#D9E2FF</color>
+    <color name="estrella">#F9A825</color>
+    <color name="disponible_texto">#1B5E20</color>
+    <color name="disponible_fondo">#DDF3DF</color>
+    <color name="no_disponible_texto">#B71C1C</color>
+    <color name="no_disponible_fondo">#FCE0E0</color>
+</resources>
